@@ -228,6 +228,37 @@ body {
   margin-right: 0;
 }
 
+.benefits-item::before {
+  display: block;
+  content: "";
+  height: 120px;
+  border-radius: 4px;
+  background-color: var(--secondary-background);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.benefits-item.item-satellite::before {
+  background-image: url(../images/satellite.svg);
+  background-size: 65.32px 70px;
+}
+
+.benefits-item.item-clock::before {
+  background-image: url(../images/clock.svg);
+  background-size: 66.96px 70px;
+}
+
+.benefits-item.item-diagram::before {
+  background-image: url(../images/diagram.svg);
+  background-size: 70px 53.69px;
+}
+
+.benefits-item.item-astronaut::before {
+  background-image: url(../images/astronaut.svg);
+  background-size: 54.83px 60.66px;
+}
+
 .benefits-title {
   font-weight: 700;
   font-size: 14px;
