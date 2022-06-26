@@ -401,10 +401,8 @@ body {
   background-color: var(--accent-color);
 }
 
-.team-soc-link:hover,
-.team-soc-icon,
-.team-soc-link:focus,
-.team-soc-icon {
+.team-soc-link:hover .team-soc-icon,
+.team-soc-link:focus .team-soc-icon {
   fill: var(--white-color);
 }
 
