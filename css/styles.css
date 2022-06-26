@@ -401,8 +401,10 @@ body {
   background-color: var(--accent-color);
 }
 
-.team-soc-icon:hover,
-.team-soc-icon:focus {
+.team-soc-link:hover,
+.team-soc-icon,
+.team-soc-link:focus,
+.team-soc-icon {
   fill: var(--white-color);
 }
 
@@ -444,6 +446,18 @@ body {
 }
 
 .footer-link.white {
+  color: var(--white-color);
+}
+
+.follow-us-title {
+  margin-bottom: 20px;
+  margin-top: 0;
+
+  font-style: normal;
+  font-weight: 700px;
+  font-size: 14px;
+  line-height: 1.14;
+  text-transform: uppercase;
   color: var(--white-color);
 }
 
