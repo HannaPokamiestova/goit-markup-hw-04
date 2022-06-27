@@ -429,10 +429,11 @@ body {
   fill: var(--white-color);
 }
 
-.section-title {
+.section-clients {
+  padding: 94px;
 }
 
-.center {
+.section-title {
 }
 
 .clients-list {
