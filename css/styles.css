@@ -175,6 +175,28 @@ body {
   color: var(--secondary-text-color);
 }
 
+.site-contacts .link {
+  display: flex;
+  align-items: center;
+  padding-top: 34px;
+  padding-bottom: 34px;
+}
+
+.site-contacts .link:hover,
+.site-contacts .link:focus {
+  color: var(--accent-color);
+}
+
+.contacts-icon {
+  margin-right: 10px;
+  fill: var(--secondary-text-color);
+}
+
+.site-contacts .contacts-icon:hover,
+.site-contacts .contacts-icon:focus {
+  fill: var(--accent-color);
+}
+
 /* ------------- HERO ---------- */
 
 .hero {
