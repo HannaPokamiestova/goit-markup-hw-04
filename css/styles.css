@@ -435,6 +435,11 @@ body {
 .center {
 }
 
+.clients-list {
+  display: flex;
+  justify-content: center;
+}
+
 .clients-list .item:last-child {
   margin-right: 0px;
 }
