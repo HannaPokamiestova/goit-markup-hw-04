@@ -440,9 +440,6 @@ body {
   padding-bottom: 94px;
 }
 
-.section-title {
-}
-
 .clients-list {
   display: flex;
   justify-content: center;
@@ -481,6 +478,16 @@ body {
   max-height: 100%;
 
   fill: var(--icons-color);
+}
+
+.clients-link:hover,
+.clients-link:focus {
+  border-color: var(--accent-color);
+}
+
+.clients-link:hover .clients-icon,
+.clients-link:focus .clients-icon {
+  fill: var(--accent-color);
 }
 
 /* ------------- FOOTER ---------- */
