@@ -167,10 +167,8 @@ body {
   display: block;
 }
 
-.header-link:hover,
-.header-link:focus,
-.site-contacts .header-link:hover,
-.site-contacts .header-link:focus {
+.header-link:hover .site-contacts,
+.header-link:focus .site-contacts {
   color: var(--accent-color);
 }
 
@@ -185,8 +183,8 @@ body {
 .site-contacts .link {
   display: flex;
   align-items: center;
-  padding-top: 34px;
-  padding-bottom: 34px;
+  padding-top: 30px;
+  padding-bottom: 30px;
 }
 
 .site-contacts .link:hover,
@@ -196,7 +194,7 @@ body {
 
 .contacts-icon {
   margin-right: 10px;
-  fill: var(--secondary-text-color);
+  fill: currentColor;
 }
 
 .site-contacts .contacts-icon:hover,
@@ -211,7 +209,6 @@ body {
 
   padding-bottom: 200px;
   padding-top: 200px;
-  background-size: cover;
 
   background-color: var(--background-footer);
   background-image: linear-gradient(
@@ -222,6 +219,10 @@ body {
     url(../images/effect\ descisions.jpg);
   background-repeat: no-repeat;
   background-position: center;
+  background-size: cover;
+  max-width: 1600px;
+  height: 600px;
+  margin: 0 auto;
 }
 
 .hero-title {
@@ -270,22 +271,22 @@ body {
 
 .benefits-item.item-satellite::before {
   background-image: url(../images/satellite.svg);
-  background-size: 65.32px 70px;
+  background-size: 70px 70px;
 }
 
 .benefits-item.item-clock::before {
   background-image: url(../images/clock.svg);
-  background-size: 66.96px 70px;
+  background-size: 70px 70px;
 }
 
 .benefits-item.item-diagram::before {
   background-image: url(../images/diagram.svg);
-  background-size: 70px 53.69px;
+  background-size: 70px 70px;
 }
 
 .benefits-item.item-astronaut::before {
   background-image: url(../images/astronaut.svg);
-  background-size: 54.83px 60.66px;
+  background-size: 70px 70px;
 }
 
 .benefits-title {
@@ -398,8 +399,6 @@ body {
 }
 
 .team-soc-item {
-  width: 44px;
-  height: 44px;
   margin-right: 10px;
 }
 
@@ -413,9 +412,10 @@ body {
 }
 
 .team-soc-link {
-  width: 100%;
-  height: 100%;
+  width: 44px;
+  height: 44px;
   background-color: var(--white-color);
+  color: var(--icons-color);
   border-radius: 50%;
   display: flex;
   align-items: center;
@@ -423,17 +423,13 @@ body {
 }
 
 .team-soc-icon {
-  fill: var(--icons-color);
+  fill: currentColor;
 }
 
 .team-soc-link:hover,
 .team-soc-link:focus {
   background-color: var(--accent-color);
-}
-
-.team-soc-link:hover .team-soc-icon,
-.team-soc-link:focus .team-soc-icon {
-  fill: var(--white-color);
+  color: var(--white-color);
 }
 
 .section-clients {
@@ -451,10 +447,8 @@ body {
 }
 
 .clients-item {
-  height: 92px;
   margin-right: 30px;
   list-style: none;
-  width: 170px;
 }
 
 .clients-item:last-child {
@@ -465,8 +459,8 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 100%;
-  height: 100%;
+  width: 170px;
+  height: 92px;
 
   color: var(--icons-color);
 
@@ -475,20 +469,13 @@ body {
 }
 
 .clients-icon {
-  max-width: 100%;
-  max-height: 100%;
-
-  fill: var(--icons-color);
+  fill: currentColor;
 }
 
 .clients-link:hover,
 .clients-link:focus {
   border-color: var(--accent-color);
-}
-
-.clients-link:hover .clients-icon,
-.clients-link:focus .clients-icon {
-  fill: var(--accent-color);
+  color: var(--accent-color);
 }
 
 /* ------------- FOOTER ---------- */
@@ -539,12 +526,10 @@ body {
 
 .follow-us-title {
   margin-bottom: 20px;
-  margin-top: 0;
   color: var(--white-color);
-  font-style: normal;
   font-weight: 700;
   font-size: 14px;
-  line-height: 16px;
+  line-height: 1.14;
   letter-spacing: 0.03em;
   text-transform: uppercase;
 }
@@ -663,6 +648,9 @@ img {
 .button-help.active {
   background-color: var(--accent-color);
   color: var(--white-color);
+
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
 .pointer {
@@ -688,6 +676,18 @@ img {
   border-top: none;
 }
 
+.portfolio-link {
+  display: block;
+  flex-direction: column;
+  height: 100%;
+}
+
+.portfolio-link:hover,
+.portfolio-link:focus {
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
+}
+
 .portfolio-title {
   font-weight: 700;
   font-size: 18px;
@@ -706,6 +706,6 @@ img {
   letter-spacing: 0.03em;
   color: var(--secondary-text-color);
 
-  width: 322 px;
+  width: 322px;
   height: 30px;
 }
